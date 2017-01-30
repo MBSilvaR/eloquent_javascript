@@ -1,77 +1,40 @@
 // 1.
-var min = function (x,y) {
-if (x < y) {
-  return x;
-} else {
-  return y;
+var t = "";
+for (var i = 0; i <= 7; i++){
+  t += "#"
+  console.log(t)
 }
-}
-console.log(min(-34,2))
-
-//or
-var min = function (x,y) {
-  return Math.min (x,y);
-}
-console.log(min(5,3));
-
 
 
 // 2.
-var isEven = function (num) {
-  num = Math.abs(num);
-  if (num === 0) {
-    return true;
-  } else if (num === 1) {
-    return false;
-  }
-  return (num - 2);
+for (var i = 1; i <= 100; i++){
+if (i % 3 === 0 && i % 5 === 0) {
+  console.log("fizzbuzz");
+} else if (i % 3 === 0 ){
+  console.log("fizz");
+} else if (i % 5 === 0 ){
+  console.log("buzz");
+} else {
+  console.log(i);
 }
-console.log(isEven(-1))
-
+}
 
 
 // 3.
-function countBs (string) {
-  var counter = 0;
-  for (var i = 0; i < string.length; i++){
-    if (string[i] === "B") {
-      counter += 1;
-    }
+var size = 8;
+var board = "";
+
+for (var y = 0; y < size; y++){
+  for (var x = 0; x < size; x++){
+    if ((x+y) % 2 === 0)
+    // {
+      board += " ";
+    // }
+    else
+    // {
+      board += "#";
+    // }
   }
-  return counter;
+  board += "\n";
 }
-console.log(countBs("BABYBABYBABY"))
-
-// 3.1
-function countChar (string, char) {
-  var counter = 0;
-  for (var i = 0; i < string.length; i++){
-    if (string[i] === char) {
-      counter += 1;
-    }
-  }
-  return counter;
-}
-console.log(countChar("krispykreme", "k"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(board);
