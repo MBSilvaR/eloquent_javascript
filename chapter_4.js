@@ -34,3 +34,11 @@ function range (start, end, step) {
 
 console.log(range(1,10,2))
 
+//2.
+function reverseArray(array) {
+  var output = [];
+  for (var i = array.length - 1; i >= 0; i--)
+    output.push(array[i]);
+  return output;
+}
+console.log(reverseArray([1,2,3]))
