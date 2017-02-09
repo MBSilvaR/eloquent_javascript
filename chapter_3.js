@@ -55,6 +55,46 @@ function countChar (string, char) {
 console.log(countChar("krispykreme", "k"))
 
 
+function isEven(num){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
